@@ -28,17 +28,15 @@ public class Ngo {
     private String address;
     private String loc;
     private String phoneno;
-
-    @OneToMany(mappedBy = "ngo")
-    @JsonManagedReference
-    private List<Campaign> campaignList;
+    private String campaign1;
+    private String campaign2;
+    private String campaign3;
 
     @Column(nullable = false)
     private String password;
    // @Column(columnDefinition="text")
     private String desc;
     private String email;
-    private String handle_name;
     private String logo;
     //private String image1;
     //private String image2;

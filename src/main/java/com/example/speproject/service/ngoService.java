@@ -1,8 +1,9 @@
 package com.example.speproject.service;
 
-import com.example.speproject.bean.Campaign;
+
 import com.example.speproject.bean.Ngo;
 import org.springframework.core.io.Resource;
+import org.springframework.data.util.Pair;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
@@ -26,4 +27,5 @@ public interface ngoService {
     String uploadImage(MultipartFile file, Ngo ngo);
 
 
+    List<Ngo> fetchNgoByCategory(String category);
 }

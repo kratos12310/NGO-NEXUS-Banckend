@@ -1,7 +1,6 @@
 package com.example.speproject.service;
 
 
-import com.example.speproject.bean.Campaign;
 import com.example.speproject.bean.Ngo;
 import com.example.speproject.dao.ngoDao;
 import com.example.speproject.service.ngoService;
@@ -124,7 +123,10 @@ public class ngoServiceImpl implements ngoService {
         return null;
     }
 
-
+    @Override
+    public List<Ngo> fetchNgoByCategory(String category) {
+        return ngodao.findByCategory(category);
+    }
 
 
 }

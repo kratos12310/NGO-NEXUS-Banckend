@@ -31,7 +31,12 @@ public class ngoController {
       @GetMapping("/ngolist")
       public List<Ngo> fetchNgoList(){
         return ngoservice.fetchNgoList();
-
+    }
+    @PostMapping("/login")
+    public Ngo login(@RequestBody Ngo credentials) {
+        Ngo u = ngoservice.login(credentials.getEmail(),credentials.getPassword());
+        System.out.println(u.getName());
+        return u;
     }
     @GetMapping("/ngocategory/{category}")
     public List<Ngo> fetchNgoByCategory(@PathVariable("category") String category){

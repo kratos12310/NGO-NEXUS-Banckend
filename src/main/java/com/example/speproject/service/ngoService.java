@@ -28,4 +28,8 @@ public interface ngoService {
 
 
     List<Ngo> fetchNgoByCategory(String category);
+
+
+
+    Ngo login(String email, String password);
 }

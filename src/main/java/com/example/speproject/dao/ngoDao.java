@@ -10,4 +10,5 @@ import java.util.List;
 @Repository
 public interface ngoDao extends JpaRepository<Ngo,Long> {
  List<Ngo> findByCategory(String category);
+ Ngo findByEmailEqualsAndPasswordEquals(String username, String password);
 }

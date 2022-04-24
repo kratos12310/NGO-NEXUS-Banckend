@@ -128,5 +128,12 @@ public class ngoServiceImpl implements ngoService {
         return ngodao.findByCategory(category);
     }
 
+    @Override
+    public Ngo login(String email, String password) {
+        return ngodao.findByEmailEqualsAndPasswordEquals(email,password);
+    }
+
+
+
 
 }

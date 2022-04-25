@@ -43,6 +43,12 @@ public class ngoController {
         return ngoservice.fetchNgoByCategory(category);
 
     }
+    @GetMapping("/ngoq/{search}")
+    public List<Ngo> fetchNgoBySearch(@PathVariable("search") String category){
+        String name=category;
+        return ngoservice.fetchNgoBySearch(name,category);
+
+    }
 
     //passing a path variable
     @GetMapping("/ngolist/{id}")
@@ -62,14 +68,15 @@ public class ngoController {
         return ngoservice.UpdateNgoById(id, ngo);
     }
 
-    @PostMapping(path = "/uploadNgo", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
-    public Ngo uploadFile(@RequestParam MultipartFile file, @RequestParam String name,
+    @PutMapping(path = "/uploadNgo/{id}", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
+    public Ngo uploadFile(@PathVariable("id") Long id, @RequestParam MultipartFile file, @RequestParam String name,
                           @RequestParam String category, @RequestParam String vision, @RequestParam String address,
                           @RequestParam String loc, @RequestParam String phoneno, @RequestParam String desc,
                           @RequestParam String email,@RequestParam String campaign1,@RequestParam String campaign2,
                           @RequestParam String campaign3) {
 
         Ngo ngo = new Ngo();
+        System.out.println(id+" "+name+" "+desc+" "+phoneno+" ");
         ngo.setName(name);
         ngo.setDesc(desc);
         ngo.setPhoneno(phoneno);
@@ -80,19 +87,51 @@ public class ngoController {
         ngo.setLoc(loc);
         ngo.setEmail(email);
         ngo.setCampaign1(campaign1);
-        ngoservice.saveNgo(ngo);
-        Long id=ngo.getId();
-        String file_name = ngoservice.uploadImage(file, ngo);
-        if (file_name == null) {
-            return null;
+        ngoservice.UpdateNgoById(id,ngo);
+        String file_name = ngoservice.uploadImage(file, id);
+        if (file_name != null) {
+            ngo.setLogo(file_name);
         }
 
-        ngo.setLogo(file_name);
+
+        ngoservice.UpdateNgoById(id, ngo);
+        return ngo;
+    }
+    @PostMapping(path = "/addaNgo", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
+    public Ngo AddNgo(@RequestParam MultipartFile file, @RequestParam String name,
+                          @RequestParam String category, @RequestParam String vision, @RequestParam String address,
+                          @RequestParam String loc, @RequestParam String phoneno, @RequestParam String desc,
+                          @RequestParam String email,@RequestParam String campaign1,@RequestParam String campaign2,
+                          @RequestParam String campaign3,@RequestParam String password) {
+
+        Ngo ngo = new Ngo();
+        System.out.println(name+" "+desc+" "+phoneno+" ");
+        ngo.setName(name);
+        ngo.setDesc(desc);
+        ngo.setPhoneno(phoneno);
+        ngo.setCategory(category);
+        ngo.setAddress(address);
+        ngo.setVision(vision);
+        ngo.setLoc(loc);
+        ngo.setEmail(email);
+        ngo.setPassword(password);
+        ngo.setCampaign1(campaign1);
+        ngo.setCampaign2(campaign2);
+        ngo.setCampaign3(campaign3);
+        Ngo ng=ngoservice.saveNgo(ngo);
+        Long id =ng.getId();
+        String file_name = ngoservice.uploadImage(file, id);
+        if (file_name != null) {
+            ngo.setLogo(file_name);
+        }
+
+
         ngoservice.UpdateNgoById(id, ngo);
         return ngo;
     }
 
-    @GetMapping(value = "/ngo/{id}")
+
+    @GetMapping(value = "/ngo/image/{id}")
     public ResponseEntity<Resource> getNgoImage(@PathVariable("id") String ngoId) {
 
         System.out.println(ngoId);
@@ -104,9 +143,9 @@ public class ngoController {
 
         Resource image = ngoservice.loadImage(ngo);
 
-        if (image == null) {
-            return ResponseEntity.notFound().build();
-        }
+       // if (image == null) {
+         //   return ResponseEntity.notFound().build();
+        //}
         return ResponseEntity.ok().header(HttpHeaders.CONTENT_DISPOSITION,
                 "attachment;name=" + image.getFilename()).body(image);
     }

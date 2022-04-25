@@ -28,14 +28,18 @@ public class Ngo {
     private String address;
     private String loc;
     private String phoneno;
+    @Lob
     private String campaign1;
+    @Lob
     private String campaign2;
+    @Lob
     private String campaign3;
 
     @Column(nullable = false)
     private String password;
-   // @Column(columnDefinition="text")
+    @Lob
     private String desc;
+    @Column(nullable=false)
     private String email;
     private String logo;
     //private String image1;

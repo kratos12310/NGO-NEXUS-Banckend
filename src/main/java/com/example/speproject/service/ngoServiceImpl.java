@@ -87,13 +87,37 @@ public class ngoServiceImpl implements ngoService {
         if(Objects.nonNull(ngo.getDesc())&& !"".equalsIgnoreCase(ngo.getDesc())){
             ngodb.setDesc(ngo.getDesc());
         }
+        if(Objects.nonNull(ngo.getEmail())&& !"".equalsIgnoreCase(ngo.getEmail())){
+            ngodb.setEmail(ngo.getEmail());
+        }
+        if(Objects.nonNull(ngo.getCampaign1())&& !"".equalsIgnoreCase(ngo.getCampaign1())){
+            ngodb.setCampaign1(ngo.getCampaign1());
+        }
+        if(Objects.nonNull(ngo.getCampaign2())&& !"".equalsIgnoreCase(ngo.getCampaign2())){
+            ngodb.setCampaign2(ngo.getCampaign2());
+        }
+        if(Objects.nonNull(ngo.getCampaign3())&& !"".equalsIgnoreCase(ngo.getCampaign3())){
+            ngodb.setCampaign3(ngo.getCampaign3());
+        }
+        if(Objects.nonNull(ngo.getLoc())&& !"".equalsIgnoreCase(ngo.getLoc())){
+            ngodb.setLoc(ngo.getLoc());
+        }
+        if(Objects.nonNull(ngo.getVision())&& !"".equalsIgnoreCase(ngo.getVision())){
+            ngodb.setVision(ngo.getVision());
+        }
+        if(Objects.nonNull(ngo.getCategory())&& !"".equalsIgnoreCase(ngo.getCategory())){
+            ngodb.setCategory(ngo.getCategory());
+        }
+        if(Objects.nonNull(ngo.getPassword())&& !"".equalsIgnoreCase(ngo.getPassword())){
+            ngodb.setPassword(ngo.getPassword());
+        }
         return ngodao.save(ngodb);
 
 
     }
 
     @Override
-    public String uploadImage(MultipartFile image, Ngo ngo) {
+    public String uploadImage(MultipartFile image, Long id) {
 
         if (image.getOriginalFilename() == null) {
             return null;
@@ -112,7 +136,8 @@ public class ngoServiceImpl implements ngoService {
         try (InputStream inputStream = image.getInputStream()) {
            Path upload_location = Paths.get(image_location);
           //  System.out.println(upload_location);
-            fileName = "logo_" + ngo.getId()+"_"+fileName;
+            String s=String.valueOf(id);
+            fileName = "logo_" + s+fileName;
             System.out.println(fileName);
             Files.copy(inputStream, upload_location.resolve(fileName),StandardCopyOption.REPLACE_EXISTING);
 
@@ -133,7 +158,10 @@ public class ngoServiceImpl implements ngoService {
         return ngodao.findByEmailEqualsAndPasswordEquals(email,password);
     }
 
-
+    @Override
+    public List<Ngo> fetchNgoBySearch(String name,String category) {
+        return ngodao.findByNameOrCategory(name,category);
+    }
 
 
 }

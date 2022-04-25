@@ -3,7 +3,6 @@ package com.example.speproject.service;
 
 import com.example.speproject.bean.Ngo;
 import org.springframework.core.io.Resource;
-import org.springframework.data.util.Pair;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
@@ -24,7 +23,7 @@ public interface ngoService {
 
 
 
-    String uploadImage(MultipartFile file, Ngo ngo);
+    String uploadImage(MultipartFile file,Long id);
 
 
     List<Ngo> fetchNgoByCategory(String category);
@@ -32,4 +31,6 @@ public interface ngoService {
 
 
     Ngo login(String email, String password);
+
+    List<Ngo> fetchNgoBySearch(String name,String category);
 }

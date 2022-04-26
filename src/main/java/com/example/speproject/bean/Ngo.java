@@ -9,6 +9,7 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import java.util.List;
+import java.util.Set;
 
 
 @Getter
@@ -20,13 +21,20 @@ import java.util.List;
 public class Ngo {
 
     @Id
-    @GeneratedValue( strategy = GenerationType.AUTO)
+    @GeneratedValue( strategy = GenerationType.IDENTITY)
+    @Column(name = "ngo_id")
     private Long id;
+    @Column(nullable=false)
     private String name;
+    @Column(nullable=false)
     private String category;
+    @Column(nullable=false)
     private String vision;
+    @Column(nullable=false)
     private String address;
+    @Column(nullable=false)
     private String loc;
+    @Column(nullable=false)
     private String phoneno;
     @Lob
     private String campaign1;
@@ -39,9 +47,13 @@ public class Ngo {
     private String password;
     @Lob
     private String desc;
-    @Column(nullable=false)
+    @Column(unique = true,nullable=false)
     private String email;
     private String logo;
+
+    @OneToMany(mappedBy = "ngo", cascade = CascadeType.ALL)
+    @JsonManagedReference(value="ngo-movement")
+    private List<DonateDetails> donatedetails;
     //private String image1;
     //private String image2;
     //private String image3;

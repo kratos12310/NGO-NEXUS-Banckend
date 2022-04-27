@@ -5,6 +5,8 @@ import com.example.speproject.dao.donatedetailsDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class donatedetailsServiceImpl implements donatedetailsService {
     @Autowired
@@ -14,5 +16,10 @@ public class donatedetailsServiceImpl implements donatedetailsService {
     @Override
     public DonateDetails saveDonateDetails(DonateDetails donatedetails) {
         return donatedetailsdao.save(donatedetails);
+    }
+
+    @Override
+    public List<DonateDetails> getdonatedetailsbyid(Long id) {
+        return null;
     }
 }

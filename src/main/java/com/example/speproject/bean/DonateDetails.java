@@ -32,4 +32,6 @@ public class DonateDetails {
 
     private int donatedamt;
     private String volunteerto;
+    private String donorname;
+
 }

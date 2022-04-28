@@ -6,3 +6,10 @@
       docker_image:
         name: asthaborkataky/ngonexus-react
         source: pull
+- name: Pull docker image
+  hosts: all
+  tasks:
+    - name: Pull ngonexus-react image
+      docker_image:
+        name: asthaborkataky/ngonexus-react
+        source: pull

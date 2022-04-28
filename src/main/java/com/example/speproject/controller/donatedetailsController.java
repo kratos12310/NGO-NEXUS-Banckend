@@ -20,7 +20,7 @@ public class donatedetailsController {
         return donatedetailsservice.saveDonateDetails(donatedetails);
     }
     @GetMapping("/getdonatedngo/{id}")
-    public List<DonateDetails> getDonateDetailsById(@PathVariable("id") Long id){
+    public DonateDetails getDonateDetailsById(@PathVariable("id") Long id){
         return donatedetailsservice.getdonatedetailsbyid(id);
     }
 }

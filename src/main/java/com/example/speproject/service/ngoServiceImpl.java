@@ -6,6 +6,7 @@ import com.example.speproject.dao.ngoDao;
 import com.example.speproject.service.ngoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.UrlResource;
 import org.springframework.http.HttpStatus;
@@ -31,7 +32,8 @@ public class ngoServiceImpl implements ngoService {
     private ngoDao ngodao;
 
     //@Value("${ngo_image_upload_location}")
-    private String image_location="/home/astha/Downloads/speproject/src/main/resources/static/images";
+    private String image_location=new ClassPathResource("static/images/").getFile().getAbsolutePath();
+    public ngoServiceImpl()throws IOException{}
 
 
     @Override

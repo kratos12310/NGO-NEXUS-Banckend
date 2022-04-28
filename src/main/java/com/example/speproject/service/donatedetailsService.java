@@ -7,5 +7,5 @@ import java.util.List;
 public interface donatedetailsService {
     DonateDetails saveDonateDetails(DonateDetails donatedetails);
 
-    List<DonateDetails> getdonatedetailsbyid(Long id);
+    DonateDetails getdonatedetailsbyid(Long id);
 }

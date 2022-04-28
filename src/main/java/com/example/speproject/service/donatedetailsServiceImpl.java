@@ -19,7 +19,7 @@ public class donatedetailsServiceImpl implements donatedetailsService {
     }
 
     @Override
-    public List<DonateDetails> getdonatedetailsbyid(Long id) {
-        return null;
+    public DonateDetails getdonatedetailsbyid(Long id) {
+        return donatedetailsdao.findById(id).get();
     }
 }

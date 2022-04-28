@@ -10,6 +10,8 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.List;
 
@@ -17,35 +19,41 @@ import java.util.List;
 @RequestMapping("api/")
 @CrossOrigin("*")
 public class ngoController {
-
+    Logger logger = LoggerFactory.getLogger(ngoController.class);
     @Autowired
     private ngoService ngoservice;
 
 
     @PostMapping("/saveNgo")
     public Ngo saveNgo(@RequestBody Ngo ngo) {
+        logger.info("Ngo Saved: "+ngo.getName());
         return ngoservice.saveNgo(ngo);
     }
 
 
       @GetMapping("/ngolist")
       public List<Ngo> fetchNgoList(){
+        logger.info("Fetched Ngo list");
         return ngoservice.fetchNgoList();
+
     }
     @PostMapping("/login")
     public Ngo login(@RequestBody Ngo credentials) {
         Ngo u = ngoservice.login(credentials.getEmail(),credentials.getPassword());
         System.out.println(u.getName());
+        logger.info(u.getEmail()+" Signed in");
         return u;
     }
     @GetMapping("/ngocategory/{category}")
     public List<Ngo> fetchNgoByCategory(@PathVariable("category") String category){
+        logger.info("Fetching Ngo by category");
         return ngoservice.fetchNgoByCategory(category);
 
     }
     @GetMapping("/ngoq/{search}")
     public List<Ngo> fetchNgoBySearch(@PathVariable("search") String category){
         String name=category;
+        logger.info("Fetching Results based on: "+name);
         return ngoservice.fetchNgoBySearch(name,category);
 
     }
@@ -53,18 +61,20 @@ public class ngoController {
     //passing a path variable
     @GetMapping("/ngolist/{id}")
     public Ngo FetchNgoById(@PathVariable("id") Long id) {
-
+        logger.info("Fetching Ngo Details of: "+id);
         return ngoservice.FetchNgoById(id);
     }
 
     @DeleteMapping("/ngolist/{id}")
     public String DeleteNgoById(@PathVariable("id") Long id) {
         ngoservice.DeleteNgoById(id);
+        logger.info("Ngo "+id+" Deleted");
         return "Department Deleted Successfully";
     }
 
     @PutMapping("ngolist/{id}")
     public Ngo UpdateNgoById(@PathVariable("id") Long id, @RequestBody Ngo ngo) {
+        logger.info("Ngo "+id+" Updated");
         return ngoservice.UpdateNgoById(id, ngo);
     }
 
@@ -92,7 +102,7 @@ public class ngoController {
         if (file_name != null) {
             ngo.setLogo(file_name);
         }
-
+        logger.info("Updated Ngo with Banner Photo: "+file_name);
 
         ngoservice.UpdateNgoById(id, ngo);
         return ngo;
@@ -124,7 +134,7 @@ public class ngoController {
         if (file_name != null) {
             ngo.setLogo(file_name);
         }
-
+        logger.info("Added Ngo with Banner Photo: "+file_name);
 
         ngoservice.UpdateNgoById(id, ngo);
         return ngo;
@@ -142,7 +152,7 @@ public class ngoController {
         }
 
         Resource image = ngoservice.loadImage(ngo);
-
+        logger.info("Getting Banner "+image.getFilename());
        // if (image == null) {
          //   return ResponseEntity.notFound().build();
         //}

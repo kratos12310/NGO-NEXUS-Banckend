@@ -340,3 +340,6 @@ java.lang.NullPointerException: null
 2022-04-28 20:06:47,492 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8096-exec-4] Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
 2022-04-28 20:06:47,492 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8096-exec-4] Writing [com.example.speproject.bean.Donor@39b093cf]
 2022-04-28 20:06:47,500 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8096-exec-4] Completed 200 OK
+2022-04-28 20:24:59,137 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-28 20:24:59,245 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2022-04-28 20:24:59,254 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.

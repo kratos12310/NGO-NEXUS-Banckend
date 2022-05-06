@@ -12,5 +12,5 @@
         source: pull
     - name: copy Docker Compose files
       copy:
-        src: ~/docker-compose.yml
+        src: docker-compose.yml
         dest: ./

@@ -34,32 +34,31 @@ class SpeprojectApplicationTests {
     @Autowired
     donatedetailsDao donatedetailsdao;
 
-    //testing login
+    //testing login for Ngo
     @Test
     public void loginTest() {
         Ngo n = ngodao.findByEmailEqualsAndPasswordEquals("wom@gm.com", "password");
         Long check = n.getId();
         Assert.assertNotNull(check);
     }
+    // testing logging for Donor
     @Test
     public void dloginTest(){
         Donor d = donordao.findByEmailEqualsAndPasswordEquals("astha@gm.com", "password");
         Long check2 = d.getId();
         Assert.assertNotNull(check2);
     }
-
-    //testing artists
+    //testing Fetching ngo by category
     @Test
     public void fetchNgoByCategoryTest() {
         List<Ngo> ngoList = ngodao.findByCategory("Women Empowerment");
         String catg = "Women Empowerment";
         if (ngoList.size() != 0) {
             Ngo ng = ngoList.get(0);
-
             Assert.assertEquals(catg, ng.getCategory());
         }
     }
-
+    //testing search of ngo
     @Test
     public void fetchNgoBySearchTest() {
         List<Ngo> ngoList = ngodao.findByNameOrCategory("Angel", "Angel");
@@ -70,24 +69,14 @@ class SpeprojectApplicationTests {
             assertThat(query, Matchers.either(Matchers.is(ng.getName())).or(Matchers.is(ng.getCategory())));
         }
     }
-
-//    @Test
-//    public void fetchNgoByCategoryTest() {
-//        List<Ngo> ngoList = ngodao.findByCategory("Animal Welfare");
-//        String query = "Animal Welfare";
-//        if (ngoList.size() != 0) {
-//            Ngo ng = ngoList.get(0);
-//            Assert.assertEquals(query,ng.getCategory());
-//        }
-//    }
-
+    //Testing getting ngo by id
     @Test
     public void fetchNgoByIdTest() {
         Long i=Long.valueOf(1);
         Ngo ngo = ngodao.findById(i).get();
         Assert.assertEquals(i,ngo.getId());
     }
-
+    //testing Donor by id
     @Test
     public void fetchDonorByIdTest() {
         Long i=Long.valueOf(1);

@@ -6,10 +6,11 @@
       docker_image:
         name: asthaborkataky/ngonexusfront
         source: pull
-- name: Pull docker image
-  hosts: all
-  tasks:
     - name: Pull ngonexus-spring image
       docker_image:
         name: asthaborkataky/ngonexusback
         source: pull
+    - name: copy Docker Compose files
+      copy:
+        src: ~/docker-compose.yml
+        dest: ./

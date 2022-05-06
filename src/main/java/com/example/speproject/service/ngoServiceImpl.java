@@ -32,7 +32,8 @@ public class ngoServiceImpl implements ngoService {
     private ngoDao ngodao;
 
     //@Value("${ngo_image_upload_location}")
-    private String image_location=new ClassPathResource("static/images/").getFile().getAbsolutePath();
+  //  private String image_location=new ClassPathResource("static/images/").getFile().getAbsolutePath();
+    private String image_location="./";
     public ngoServiceImpl()throws IOException{}
 
 

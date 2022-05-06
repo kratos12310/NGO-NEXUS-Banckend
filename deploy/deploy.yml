@@ -4,12 +4,12 @@
   tasks:
     - name: Pull ngonexus-react image
       docker_image:
-        name: asthaborkataky/ngonexus-react
+        name: asthaborkataky/ngonexusfront
         source: pull
 - name: Pull docker image
   hosts: all
   tasks:
-    - name: Pull ngonexus-react image
+    - name: Pull ngonexus-spring image
       docker_image:
-        name: asthaborkataky/ngonexus-react
+        name: asthaborkataky/ngonexusback
         source: pull

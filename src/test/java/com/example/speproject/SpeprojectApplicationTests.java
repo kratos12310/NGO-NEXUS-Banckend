@@ -52,7 +52,7 @@ class SpeprojectApplicationTests {
     @Test
     public void fetchNgoByCategoryTest() {
         List<Ngo> ngoList = ngodao.findByCategory("Women Empowerment");
-        String catg = "Woman Empowerment";
+        String catg = "Women Empowerment";
         if (ngoList.size() != 0) {
             Ngo ng = ngoList.get(0);
 
@@ -105,12 +105,12 @@ class SpeprojectApplicationTests {
 //        Assert.assertEquals(ngodao.findById(i).get().getName(), ng.getName());
 //    }
 
-    @Test
-    public void DeleteNgoByIdTest() {
-        Long i=Long.valueOf(1);
-        ngodao.deleteById(i);
-        Assert.assertFalse(ngodao.findById(i).isPresent());
-    }
+//    @Test
+//    public void DeleteNgoByIdTest() {
+//        Long i=Long.valueOf(1);
+//        ngodao.deleteById(i);
+//        Assert.assertFalse(ngodao.findById(i).isPresent());
+//    }
 
 
 

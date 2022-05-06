@@ -35,7 +35,7 @@ public static void main(String[] args) {
             String email = "wom@gm.com";
 
             Ngo ngo = ngodao.save(new Ngo(i, "Angel", "Women Empowerment", "Nari Shakti", "Hyderabad", "Assam", "9435560505", "Save Her", "She is Power", "Saving Life", "password", "Saving Life", email, "", null));
-            Donor donor = donordao.save(new Donor(i, "Astha", "Astha@gm.com", "password", "8812071725", "Individual", null));
+            Donor donor = donordao.save(new Donor(i, "Astha", "astha@gm.com", "password", "8812071725", "Individual", null));
             DonateDetails donatedetails = new DonateDetails(i, ngo, donor, 500, "pari", "satya");
             List<DonateDetails> donateDetailsList = new ArrayList<>();
             donateDetailsList.add(donatedetails);

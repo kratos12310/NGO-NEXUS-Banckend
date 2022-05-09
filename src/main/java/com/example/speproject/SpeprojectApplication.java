@@ -28,21 +28,21 @@ public static void main(String[] args) {
     }
 
 
-//    @Bean
-//    InitializingBean Ngo() {
-//        return () -> {
-//            Long i = Long.valueOf(1);
-//            String email = "wom@gm.com";
-//
-//            Ngo ngo = ngodao.save(new Ngo(i, "Angel", "Women Empowerment", "Nari Shakti", "Hyderabad", "Assam", "9435560505", "Save Her", "She is Power", "Saving Life", "password", "Saving Life", email, "", null));
-//            Donor donor = donordao.save(new Donor(i, "Astha", "astha@gm.com", "password", "8812071725", "Individual", null));
-//            DonateDetails donatedetails = new DonateDetails(i, ngo, donor, 500, "pari", "satya");
-//            List<DonateDetails> donateDetailsList = new ArrayList<>();
-//            donateDetailsList.add(donatedetails);
-//            ngo.setDonatedetails(donateDetailsList);
-//            ngodao.save(ngo);
-//            donor.setDonatedetails(donateDetailsList);
-//            donordao.save(donor);
-//        };
-//  }
+    @Bean
+    InitializingBean Ngo() {
+        return () -> {
+            Long i = Long.valueOf(1);
+            String email = "wom@gm.com";
+
+            Ngo ngo = ngodao.save(new Ngo(i, "Angel", "Women Empowerment", "Nari Shakti", "Hyderabad", "Assam", "9435560505", "Save Her", "She is Power", "Saving Life", "password", "Saving Life", email, "", null));
+            Donor donor = donordao.save(new Donor(i, "Astha", "astha@gm.com", "password", "8812071725", "Individual", null));
+            DonateDetails donatedetails = new DonateDetails(i, ngo, donor, 500, "pari", "satya");
+            List<DonateDetails> donateDetailsList = new ArrayList<>();
+            donateDetailsList.add(donatedetails);
+            ngo.setDonatedetails(donateDetailsList);
+            ngodao.save(ngo);
+            donor.setDonatedetails(donateDetailsList);
+            donordao.save(donor);
+        };
+  }
 }

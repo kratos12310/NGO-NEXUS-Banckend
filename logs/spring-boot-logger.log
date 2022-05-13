@@ -1,325 +1,39 @@
-2022-05-08 10:38:50,745 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting SpeprojectApplication using Java 11.0.13 on notebook with PID 764824 (/home/astha/Downloads/speproject/target/classes started by astha in /home/astha/Downloads/speproject)
-2022-05-08 10:38:50,751 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
-2022-05-08 10:38:51,632 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-05-08 10:38:51,635 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-05-08 10:38:58,316 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-05-08 10:38:59,385 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 819 ms. Found 3 JPA repository interfaces.
-2022-05-08 10:39:02,198 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8089 (http)
-2022-05-08 10:39:02,247 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8089"]
-2022-05-08 10:39:02,248 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
-2022-05-08 10:39:02,249 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-05-08 10:39:02,486 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
-2022-05-08 10:39:02,487 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 10565 ms
-2022-05-08 10:39:13,895 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
-2022-05-08 10:39:25,546 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
-2022-05-08 10:39:36,668 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-05-08 10:39:39,535 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-05-08 10:39:40,092 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2022-05-08 10:39:41,809 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMethodMapping [restartedMain] 18 mappings in 'requestMappingHandlerMapping'
-2022-05-08 10:39:41,893 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2022-05-08 10:39:41,962 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2022-05-08 10:39:42,659 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
-2022-05-08 10:39:42,734 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8089"]
-2022-05-08 10:39:42,857 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8089 (http) with context path ''
-2022-05-08 10:39:42,877 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started SpeprojectApplication in 59.987 seconds (JVM running for 69.906)
-2022-05-08 10:41:31,632 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-05-08 10:41:31,677 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
-2022-05-08 10:41:32,031 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
-2022-05-08 10:42:11,226 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting SpeprojectApplication using Java 11.0.13 on notebook with PID 767532 (/home/astha/Downloads/speproject/target/classes started by astha in /home/astha/Downloads/speproject)
-2022-05-08 10:42:11,259 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
-2022-05-08 10:42:11,342 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-05-08 10:42:11,342 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-05-08 10:42:13,081 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-05-08 10:42:13,126 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 36 ms. Found 3 JPA repository interfaces.
-2022-05-08 10:42:14,151 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8089 (http)
-2022-05-08 10:42:14,158 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8089"]
-2022-05-08 10:42:14,158 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
-2022-05-08 10:42:14,159 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-05-08 10:42:14,231 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
-2022-05-08 10:42:14,232 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2889 ms
-2022-05-08 10:42:14,560 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
-2022-05-08 10:42:20,449 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
-2022-05-08 10:42:55,039 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-05-08 10:42:57,302 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-05-08 10:42:57,523 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2022-05-08 10:42:57,709 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMethodMapping [restartedMain] 18 mappings in 'requestMappingHandlerMapping'
-2022-05-08 10:42:57,838 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2022-05-08 10:42:57,938 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2022-05-08 10:42:58,040 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
-2022-05-08 10:42:58,062 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8089"]
-2022-05-08 10:42:58,077 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8089 (http) with context path ''
-2022-05-08 10:42:58,097 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started SpeprojectApplication in 49.17 seconds (JVM running for 52.193)
-2022-05-08 10:59:25,916 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8089-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-05-08 10:59:25,920 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-2] Initializing Servlet 'dispatcherServlet'
-2022-05-08 10:59:25,920 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-8089-exec-2] Detected StandardServletMultipartResolver
-2022-05-08 10:59:25,921 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-8089-exec-2] Detected AcceptHeaderLocaleResolver
-2022-05-08 10:59:25,924 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-8089-exec-2] Detected FixedThemeResolver
-2022-05-08 10:59:25,929 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-8089-exec-2] Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@381e9086
-2022-05-08 10:59:25,931 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-8089-exec-2] Detected org.springframework.web.servlet.support.SessionFlashMapManager@cf659fd
-2022-05-08 10:59:25,932 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-2] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2022-05-08 10:59:25,932 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-2] Completed initialization in 12 ms
-2022-05-08 10:59:25,949 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-2] GET "/api/ngolist", parameters={}
-2022-05-08 10:59:25,983 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-2] Mapped to com.example.speproject.controller.ngoController#fetchNgoList()
-2022-05-08 10:59:26,049 INFO com.example.speproject.controller.ngoController [http-nio-8089-exec-2] Fetched Ngo list
-2022-05-08 10:59:27,032 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-2] Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2022-05-08 10:59:27,033 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-2] Writing [[com.example.speproject.bean.Ngo@a95b403]]
-2022-05-08 10:59:27,249 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-2] Completed 200 OK
-2022-05-08 11:05:56,150 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-5] GET "/api/ngolist", parameters={}
-2022-05-08 11:05:56,151 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-5] Mapped to com.example.speproject.controller.ngoController#fetchNgoList()
-2022-05-08 11:05:56,151 INFO com.example.speproject.controller.ngoController [http-nio-8089-exec-5] Fetched Ngo list
-2022-05-08 11:05:56,174 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-5] Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2022-05-08 11:05:56,175 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-5] Writing [[com.example.speproject.bean.Ngo@1e16ffb2]]
-2022-05-08 11:05:56,216 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-5] Completed 200 OK
-2022-05-08 11:06:19,648 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-6] GET "/api/ngolist", parameters={}
-2022-05-08 11:06:19,649 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-6] Mapped to com.example.speproject.controller.ngoController#fetchNgoList()
-2022-05-08 11:06:19,649 INFO com.example.speproject.controller.ngoController [http-nio-8089-exec-6] Fetched Ngo list
-2022-05-08 11:06:19,667 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-6] Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2022-05-08 11:06:19,670 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-6] Writing [[com.example.speproject.bean.Ngo@6667bf7]]
-2022-05-08 11:06:19,698 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-6] Completed 200 OK
-2022-05-08 11:09:51,960 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-9] POST "/api/login", parameters={}
-2022-05-08 11:09:51,960 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-9] Mapped to com.example.speproject.controller.ngoController#login(Ngo)
-2022-05-08 11:09:52,129 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-9] Read "application/json;charset=UTF-8" to [com.example.speproject.bean.Ngo@5d7ebb50]
-2022-05-08 11:09:52,239 INFO com.example.speproject.controller.ngoController [http-nio-8089-exec-9] wom@gm.com Signed in
-2022-05-08 11:09:52,243 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-9] Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2022-05-08 11:09:52,244 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-9] Writing [com.example.speproject.bean.Ngo@362318e]
-2022-05-08 11:09:52,250 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-9] Completed 200 OK
-2022-05-08 11:23:47,795 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-1] POST "/api/addaNgo", parameters={multipart}
-2022-05-08 11:23:48,037 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-1] Mapped to com.example.speproject.controller.ngoController#AddNgo(MultipartFile, String, String, String, String, String, String, String, String, String, String, String, String)
-2022-05-08 11:23:48,426 INFO com.example.speproject.controller.ngoController [http-nio-8089-exec-1] Added Ngo with Banner Photo: logo_2calcTest2.png
-2022-05-08 11:23:48,966 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-1] Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2022-05-08 11:23:48,966 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-1] Writing [com.example.speproject.bean.Ngo@10644785]
-2022-05-08 11:23:48,970 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-1] Completed 200 OK
-2022-05-08 11:25:58,782 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-5] PUT "/api/ngolist/2", parameters={}
-2022-05-08 11:25:58,784 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-5] Mapped to com.example.speproject.controller.ngoController#UpdateNgoById(Long, Ngo)
-2022-05-08 11:25:59,263 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-5] Read "application/json;charset=UTF-8" to [com.example.speproject.bean.Ngo@517c7eb1]
-2022-05-08 11:25:59,264 INFO com.example.speproject.controller.ngoController [http-nio-8089-exec-5] Ngo 2 Updated
-2022-05-08 11:26:00,364 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-5] Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2022-05-08 11:26:00,364 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-5] Writing [com.example.speproject.bean.Ngo@109aca48]
-2022-05-08 11:26:00,558 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-5] Completed 200 OK
-2022-05-08 11:31:13,315 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-8] GET "/api/category/Forest%20Conservation", parameters={}
-2022-05-08 11:31:13,351 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-8] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-2022-05-08 11:31:13,359 DEBUG org.springframework.web.servlet.resource.ResourceHttpRequestHandler [http-nio-8089-exec-8] Resource not found
-2022-05-08 11:31:13,363 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-8] Completed 404 NOT_FOUND
-2022-05-08 11:31:13,381 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-8] "ERROR" dispatch for GET "/error", parameters={}
-2022-05-08 11:31:13,384 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-8] Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
-2022-05-08 11:31:13,413 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-8] Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2022-05-08 11:31:13,414 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-8] Writing [{timestamp=Sun May 08 11:31:13 IST 2022, status=404, error=Not Found, message=No message available,  (truncated)...]
-2022-05-08 11:31:13,446 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-8] Exiting from "ERROR" dispatch, status 404
-2022-05-08 11:31:32,641 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-9] GET "/api/ngocategory/Forest%20Conservation", parameters={}
-2022-05-08 11:31:32,642 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-9] Mapped to com.example.speproject.controller.ngoController#fetchNgoByCategory(String)
-2022-05-08 11:31:32,646 INFO com.example.speproject.controller.ngoController [http-nio-8089-exec-9] Fetching Ngo by category
-2022-05-08 11:31:32,696 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-9] Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2022-05-08 11:31:32,697 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-9] Writing [[com.example.speproject.bean.Ngo@15e3710e]]
-2022-05-08 11:31:32,716 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-9] Completed 200 OK
-2022-05-08 11:37:47,786 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-1] GET "/api/ngoq/Fern%20Corporation", parameters={multipart}
-2022-05-08 11:37:47,792 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-1] Mapped to com.example.speproject.controller.ngoController#fetchNgoBySearch(String)
-2022-05-08 11:37:47,794 INFO com.example.speproject.controller.ngoController [http-nio-8089-exec-1] Fetching Results based on: Fern Corporation
-2022-05-08 11:37:47,805 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-1] Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2022-05-08 11:37:47,806 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-1] Writing [[]]
-2022-05-08 11:37:47,808 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-1] Completed 200 OK
-2022-05-08 11:37:59,281 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-3] GET "/api/ngoq/Fern%20Incorporation", parameters={multipart}
-2022-05-08 11:37:59,286 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-3] Mapped to com.example.speproject.controller.ngoController#fetchNgoBySearch(String)
-2022-05-08 11:37:59,288 INFO com.example.speproject.controller.ngoController [http-nio-8089-exec-3] Fetching Results based on: Fern Incorporation
-2022-05-08 11:37:59,294 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-3] Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2022-05-08 11:37:59,294 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-3] Writing [[com.example.speproject.bean.Ngo@6278d8ff]]
-2022-05-08 11:37:59,631 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-3] Completed 200 OK
-2022-05-08 11:41:20,972 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-6] GET "/api/ngolist", parameters={}
-2022-05-08 11:41:20,973 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-6] Mapped to com.example.speproject.controller.ngoController#fetchNgoList()
-2022-05-08 11:41:20,973 INFO com.example.speproject.controller.ngoController [http-nio-8089-exec-6] Fetched Ngo list
-2022-05-08 11:41:20,984 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-6] Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2022-05-08 11:41:20,985 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-6] Writing [[com.example.speproject.bean.Ngo@4692a558, com.example.speproject.bean.Ngo@7b6fa992]]
-2022-05-08 11:41:21,001 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-6] Completed 200 OK
-2022-05-08 11:42:02,489 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-7] GET "/api/ngolist/2", parameters={}
-2022-05-08 11:42:02,489 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-7] Mapped to com.example.speproject.controller.ngoController#FetchNgoById(Long)
-2022-05-08 11:42:02,491 INFO com.example.speproject.controller.ngoController [http-nio-8089-exec-7] Fetching Ngo Details of: 2
-2022-05-08 11:42:02,552 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-7] Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2022-05-08 11:42:02,553 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-7] Writing [com.example.speproject.bean.Ngo@5108261e]
-2022-05-08 11:42:02,567 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-7] Completed 200 OK
-2022-05-08 11:49:19,216 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-10] GET "/api/ngo/image/2", parameters={}
-2022-05-08 11:49:19,217 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-10] Mapped to com.example.speproject.controller.ngoController#getNgoImage(String)
-2022-05-08 11:49:19,332 INFO com.example.speproject.controller.ngoController [http-nio-8089-exec-10] Getting Banner logo_2calcTest2.png
-2022-05-08 11:49:19,798 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-10] Using 'application/json', given [*/*] and supported [*/*, application/json, application/*+json, application/json, application/*+json]
-2022-05-08 11:49:19,799 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-10] Writing [URL [file:/home/astha/Downloads/speproject/./logo_2calcTest2.png]]
-2022-05-08 11:49:19,805 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-10] Completed 200 OK
-2022-05-08 11:56:25,675 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-3] DELETE "/ngolist/1", parameters={}
-2022-05-08 11:56:25,676 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-3] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-2022-05-08 11:56:25,678 DEBUG org.springframework.web.servlet.resource.ResourceHttpRequestHandler [http-nio-8089-exec-3] Resource not found
-2022-05-08 11:56:25,679 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-3] Completed 404 NOT_FOUND
-2022-05-08 11:56:25,680 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-3] "ERROR" dispatch for DELETE "/error", parameters={}
-2022-05-08 11:56:25,681 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-3] Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
-2022-05-08 11:56:25,684 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-3] Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2022-05-08 11:56:25,685 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-3] Writing [{timestamp=Sun May 08 11:56:25 IST 2022, status=404, error=Not Found, message=No message available,  (truncated)...]
-2022-05-08 11:56:25,687 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-3] Exiting from "ERROR" dispatch, status 404
-2022-05-08 11:56:52,240 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-4] DELETE "/api/ngolist/1", parameters={}
-2022-05-08 11:56:52,241 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-4] Mapped to com.example.speproject.controller.ngoController#DeleteNgoById(Long)
-2022-05-08 11:56:52,726 INFO com.example.speproject.controller.ngoController [http-nio-8089-exec-4] Ngo 1 Deleted
-2022-05-08 11:56:52,726 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-4] Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
-2022-05-08 11:56:52,727 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-4] Writing ["Department Deleted Successfully"]
-2022-05-08 11:56:52,728 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-4] Completed 200 OK
-2022-05-08 12:01:57,762 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-7] POST "/api/savedonor", parameters={}
-2022-05-08 12:01:57,763 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-7] Mapped to com.example.speproject.controller.donorController#saveDonor(Donor)
-2022-05-08 12:01:57,764 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-7] Read "application/json;charset=UTF-8" to [com.example.speproject.bean.Donor@321f03ba]
-2022-05-08 12:01:57,765 INFO com.example.speproject.controller.donorController [http-nio-8089-exec-7] Donor saved with name Satya Jyoti
-2022-05-08 12:01:58,029 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-7] Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2022-05-08 12:01:58,030 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-7] Writing [com.example.speproject.bean.Donor@321f03ba]
-2022-05-08 12:01:58,031 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-7] Completed 200 OK
-2022-05-08 12:07:27,968 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-10] GET "/api/donorlogin", parameters={}
-2022-05-08 12:07:28,495 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8089-exec-10] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
-2022-05-08 12:07:28,496 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-10] Completed 405 METHOD_NOT_ALLOWED
-2022-05-08 12:07:28,497 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-10] "ERROR" dispatch for GET "/error", parameters={}
-2022-05-08 12:07:28,498 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-10] Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
-2022-05-08 12:07:28,500 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-10] Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2022-05-08 12:07:28,501 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-10] Writing [{timestamp=Sun May 08 12:07:28 IST 2022, status=405, error=Method Not Allowed, trace=org.springframe (truncated)...]
-2022-05-08 12:07:28,503 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-10] Exiting from "ERROR" dispatch, status 405
-2022-05-08 12:09:44,683 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-3] POST "/api/donorlogin", parameters={}
-2022-05-08 12:09:44,683 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-3] Mapped to com.example.speproject.controller.donorController#dlogin(Donor)
-2022-05-08 12:09:44,685 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-3] Read "application/json;charset=UTF-8" to [com.example.speproject.bean.Donor@51838c7f]
-2022-05-08 12:09:44,810 INFO com.example.speproject.controller.donorController [http-nio-8089-exec-3] Donor Satya Jyoti logged in
-2022-05-08 12:09:44,811 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-3] Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2022-05-08 12:09:44,812 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-3] Writing [com.example.speproject.bean.Donor@339c5054]
-2022-05-08 12:09:44,828 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-3] Completed 200 OK
-2022-05-08 12:10:56,564 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-6] GET "/api/donor/2", parameters={}
-2022-05-08 12:10:56,565 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-6] Mapped to com.example.speproject.controller.donorController#FetchDonorById(Long)
-2022-05-08 12:10:56,567 INFO com.example.speproject.controller.donorController [http-nio-8089-exec-6] Getting Donor Details of Donor ID 2
-2022-05-08 12:10:56,577 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-6] Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2022-05-08 12:10:56,578 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-6] Writing [com.example.speproject.bean.Donor@61f5efa0]
-2022-05-08 12:10:56,590 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-6] Completed 200 OK
-2022-05-08 12:14:28,303 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-9] POST "/api/savedonatedetails", parameters={}
-2022-05-08 12:14:28,304 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-9] Mapped to com.example.speproject.controller.donatedetailsController#saveDonateDetails(DonateDetails)
-2022-05-08 12:14:28,305 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-9] Read "application/json;charset=UTF-8" to [com.example.speproject.bean.DonateDetails@44cc735f]
-2022-05-08 12:14:28,306 INFO com.example.speproject.controller.donatedetailsController [http-nio-8089-exec-9] Saving Donation Details
-2022-05-08 12:14:28,589 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-9] Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2022-05-08 12:14:28,590 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-9] Writing [com.example.speproject.bean.DonateDetails@44cc735f]
-2022-05-08 12:14:28,592 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-9] Completed 200 OK
-2022-05-08 12:15:26,011 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-10] GET "/api/getdonatedngo/2", parameters={}
-2022-05-08 12:15:26,012 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-10] Mapped to com.example.speproject.controller.donatedetailsController#getDonateDetailsById(Long)
-2022-05-08 12:15:26,013 INFO com.example.speproject.controller.donatedetailsController [http-nio-8089-exec-10] Getting Donation Details by id 2
-2022-05-08 12:15:26,022 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-10] Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2022-05-08 12:15:26,022 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-10] Writing [com.example.speproject.bean.DonateDetails@28cd333b]
-2022-05-08 12:15:26,024 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-10] Completed 200 OK
-2022-05-08 12:16:31,638 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-3] GET "/api/ngolist", parameters={}
-2022-05-08 12:16:31,639 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-3] Mapped to com.example.speproject.controller.ngoController#fetchNgoList()
-2022-05-08 12:16:31,639 INFO com.example.speproject.controller.ngoController [http-nio-8089-exec-3] Fetched Ngo list
-2022-05-08 12:16:31,647 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-3] Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2022-05-08 12:16:31,648 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-3] Writing [[com.example.speproject.bean.Ngo@36a9d469]]
-2022-05-08 12:16:31,655 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-3] Completed 200 OK
-2022-05-08 12:16:36,042 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-4] GET "/api/ngocategory/Forest%20Conservation", parameters={}
-2022-05-08 12:16:36,042 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-4] Mapped to com.example.speproject.controller.ngoController#fetchNgoByCategory(String)
-2022-05-08 12:16:36,043 INFO com.example.speproject.controller.ngoController [http-nio-8089-exec-4] Fetching Ngo by category
-2022-05-08 12:16:36,045 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-4] Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2022-05-08 12:16:36,046 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-4] Writing [[com.example.speproject.bean.Ngo@59e94015]]
-2022-05-08 12:16:36,048 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-4] Completed 200 OK
-2022-05-08 12:17:44,413 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-7] GET "/api/ngocategory/Forest%20Conservation", parameters={}
-2022-05-08 12:17:44,414 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-7] Mapped to com.example.speproject.controller.ngoController#fetchNgoByCategory(String)
-2022-05-08 12:17:44,414 INFO com.example.speproject.controller.ngoController [http-nio-8089-exec-7] Fetching Ngo by category
-2022-05-08 12:17:44,430 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-7] Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2022-05-08 12:17:44,431 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-7] Writing [[com.example.speproject.bean.Ngo@3b9debf0]]
-2022-05-08 12:17:44,436 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-7] Completed 200 OK
-2022-05-08 12:24:06,259 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-10] GET "/api/ngocategory/Forest%20Conservation", parameters={}
-2022-05-08 12:24:06,261 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-10] Mapped to com.example.speproject.controller.ngoController#fetchNgoByCategory(String)
-2022-05-08 12:24:06,261 INFO com.example.speproject.controller.ngoController [http-nio-8089-exec-10] Fetching Ngo by category
-2022-05-08 12:24:06,265 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-10] Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2022-05-08 12:24:06,266 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-10] Writing [[com.example.speproject.bean.Ngo@42534ecb]]
-2022-05-08 12:24:06,276 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-10] Completed 200 OK
-2022-05-08 12:58:59,639 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-05-08 12:58:59,710 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
-2022-05-08 12:58:59,834 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
-2022-05-08 13:31:20,835 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting SpeprojectApplication using Java 11.0.13 on notebook with PID 947484 (/home/astha/Downloads/speproject/target/classes started by astha in /home/astha/Downloads/speproject)
-2022-05-08 13:31:21,046 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
-2022-05-08 13:31:22,077 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-05-08 13:31:22,078 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-05-08 13:31:29,255 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-05-08 13:31:29,317 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 54 ms. Found 3 JPA repository interfaces.
-2022-05-08 13:31:32,088 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8089 (http)
-2022-05-08 13:31:32,118 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8089"]
-2022-05-08 13:31:32,119 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
-2022-05-08 13:31:32,120 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-05-08 13:31:32,384 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
-2022-05-08 13:31:32,386 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 10305 ms
-2022-05-08 13:31:33,837 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
-2022-05-08 13:31:42,216 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
-2022-05-08 13:31:48,662 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-05-08 13:31:51,034 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'Ngo' defined in com.example.speproject.SpeprojectApplication: Invocation of init method failed; nested exception is org.springframework.orm.jpa.JpaObjectRetrievalFailureException: Unable to find com.example.speproject.bean.DonateDetails with id 1; nested exception is javax.persistence.EntityNotFoundException: Unable to find com.example.speproject.bean.DonateDetails with id 1
-2022-05-08 13:31:51,035 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-05-08 13:31:51,109 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Shutdown initiated...
-2022-05-08 13:31:51,137 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Shutdown completed.
-2022-05-08 13:31:51,141 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Stopping service [Tomcat]
-2022-05-08 13:31:51,175 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain] 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2022-05-08 13:31:51,635 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'Ngo' defined in com.example.speproject.SpeprojectApplication: Invocation of init method failed; nested exception is org.springframework.orm.jpa.JpaObjectRetrievalFailureException: Unable to find com.example.speproject.bean.DonateDetails with id 1; nested exception is javax.persistence.EntityNotFoundException: Unable to find com.example.speproject.bean.DonateDetails with id 1
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.example.speproject.SpeprojectApplication.main(SpeprojectApplication.java:27)
+2022-05-10 00:00:09,524 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-8] POST "/api/addaNgo", parameters={multipart}
+2022-05-10 00:00:09,871 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-8] Mapped to com.example.speproject.controller.ngoController#AddNgo(MultipartFile, String, String, String, String, String, String, String, String, String, String, String, String)
+2022-05-10 00:00:09,878 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-8] Failed to complete request: org.springframework.dao.DataIntegrityViolationException: not-null property references a null or transient value : com.example.speproject.bean.Ngo.address; nested exception is org.hibernate.PropertyValueException: not-null property references a null or transient value : com.example.speproject.bean.Ngo.address
+2022-05-10 00:00:09,880 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-8089-exec-8] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: not-null property references a null or transient value : com.example.speproject.bean.Ngo.address; nested exception is org.hibernate.PropertyValueException: not-null property references a null or transient value : com.example.speproject.bean.Ngo.address] with root cause
+org.hibernate.PropertyValueException: not-null property references a null or transient value : com.example.speproject.bean.Ngo.address
+	at org.hibernate.engine.internal.Nullability.checkNullability(Nullability.java:111)
+	at org.hibernate.engine.internal.Nullability.checkNullability(Nullability.java:55)
+	at org.hibernate.action.internal.AbstractEntityInsertAction.nullifyTransientReferencesIfNotAlready(AbstractEntityInsertAction.java:116)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:72)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:645)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:282)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:263)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:317)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:330)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:287)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:193)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:123)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:185)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:128)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:55)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:756)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:742)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
-Caused by: org.springframework.orm.jpa.JpaObjectRetrievalFailureException: Unable to find com.example.speproject.bean.DonateDetails with id 1; nested exception is javax.persistence.EntityNotFoundException: Unable to find com.example.speproject.bean.DonateDetails with id 1
-	at org.springframework.orm.jpa.EntityManagerFactoryUtils.convertJpaAccessExceptionIfPossible(EntityManagerFactoryUtils.java:379)
-	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:235)
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:551)
-	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
-	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242)
-	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
-	at com.sun.proxy.$Proxy112.save(Unknown Source)
-	at com.example.speproject.SpeprojectApplication.lambda$Ngo$0(SpeprojectApplication.java:45)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
-	... 21 common frames omitted
-Caused by: javax.persistence.EntityNotFoundException: Unable to find com.example.speproject.bean.DonateDetails with id 1
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$JpaEntityNotFoundDelegate.handleEntityNotFound(EntityManagerFactoryBuilderImpl.java:177)
-	at org.hibernate.event.internal.DefaultLoadEventListener.load(DefaultLoadEventListener.java:216)
-	at org.hibernate.event.internal.DefaultLoadEventListener.proxyOrLoad(DefaultLoadEventListener.java:327)
-	at org.hibernate.event.internal.DefaultLoadEventListener.doOnLoad(DefaultLoadEventListener.java:108)
-	at org.hibernate.event.internal.DefaultLoadEventListener.onLoad(DefaultLoadEventListener.java:74)
-	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:118)
-	at org.hibernate.internal.SessionImpl.fireLoadNoChecks(SessionImpl.java:1231)
-	at org.hibernate.internal.SessionImpl.internalLoad(SessionImpl.java:1096)
-	at org.hibernate.type.EntityType.resolveIdentifier(EntityType.java:706)
-	at org.hibernate.type.EntityType.resolve(EntityType.java:465)
-	at org.hibernate.type.ManyToOneType.resolve(ManyToOneType.java:265)
-	at org.hibernate.type.EntityType.resolve(EntityType.java:458)
-	at org.hibernate.type.EntityType.replace(EntityType.java:359)
-	at org.hibernate.type.CollectionType.replaceElements(CollectionType.java:586)
-	at org.hibernate.type.CollectionType.replace(CollectionType.java:750)
-	at org.hibernate.type.TypeHelper.replace(TypeHelper.java:167)
-	at org.hibernate.event.internal.DefaultMergeEventListener.copyValues(DefaultMergeEventListener.java:450)
-	at org.hibernate.event.internal.DefaultMergeEventListener.entityIsDetached(DefaultMergeEventListener.java:347)
-	at org.hibernate.event.internal.DefaultMergeEventListener.onMerge(DefaultMergeEventListener.java:172)
-	at org.hibernate.event.internal.DefaultMergeEventListener.onMerge(DefaultMergeEventListener.java:70)
-	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107)
-	at org.hibernate.internal.SessionImpl.fireMerge(SessionImpl.java:829)
-	at org.hibernate.internal.SessionImpl.merge(SessionImpl.java:816)
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:362)
+	at com.sun.proxy.$Proxy105.persist(Unknown Source)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:311)
-	at com.sun.proxy.$Proxy105.merge(Unknown Source)
-	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:640)
+	at com.sun.proxy.$Proxy105.persist(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:637)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -341,123 +55,15 @@ Caused by: javax.persistence.EntityNotFoundException: Unable to find com.example
 	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
-	... 31 common frames omitted
-2022-05-08 13:33:57,122 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting SpeprojectApplication using Java 11.0.13 on notebook with PID 950039 (/home/astha/Downloads/speproject/target/classes started by astha in /home/astha/Downloads/speproject)
-2022-05-08 13:33:57,125 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
-2022-05-08 13:33:57,410 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-05-08 13:33:57,411 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-05-08 13:33:58,939 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-05-08 13:33:58,998 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 50 ms. Found 3 JPA repository interfaces.
-2022-05-08 13:33:59,840 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8089 (http)
-2022-05-08 13:33:59,848 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8089"]
-2022-05-08 13:33:59,848 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
-2022-05-08 13:33:59,849 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-05-08 13:34:00,009 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
-2022-05-08 13:34:00,010 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2597 ms
-2022-05-08 13:34:00,705 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
-2022-05-08 13:34:01,392 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
-2022-05-08 13:34:03,053 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-05-08 13:34:04,054 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-05-08 13:34:04,648 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2022-05-08 13:34:04,993 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMethodMapping [restartedMain] 18 mappings in 'requestMappingHandlerMapping'
-2022-05-08 13:34:05,109 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2022-05-08 13:34:05,129 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2022-05-08 13:34:05,389 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
-2022-05-08 13:34:05,405 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8089"]
-2022-05-08 13:34:05,505 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8089 (http) with context path ''
-2022-05-08 13:34:05,517 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started SpeprojectApplication in 10.625 seconds (JVM running for 14.166)
-2022-05-08 13:34:29,957 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8089-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-05-08 13:34:29,958 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-2] Initializing Servlet 'dispatcherServlet'
-2022-05-08 13:34:29,959 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-8089-exec-2] Detected StandardServletMultipartResolver
-2022-05-08 13:34:29,959 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-8089-exec-2] Detected AcceptHeaderLocaleResolver
-2022-05-08 13:34:29,959 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-8089-exec-2] Detected FixedThemeResolver
-2022-05-08 13:34:29,960 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-8089-exec-2] Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2dcab259
-2022-05-08 13:34:29,960 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-8089-exec-2] Detected org.springframework.web.servlet.support.SessionFlashMapManager@2475fc04
-2022-05-08 13:34:29,961 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-2] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2022-05-08 13:34:29,961 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-2] Completed initialization in 2 ms
-2022-05-08 13:34:29,968 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-2] GET "/api/ngoq/Fern%20Incorporation", parameters={}
-2022-05-08 13:34:30,072 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-2] Mapped to com.example.speproject.controller.ngoController#fetchNgoBySearch(String)
-2022-05-08 13:34:30,156 INFO com.example.speproject.controller.ngoController [http-nio-8089-exec-2] Fetching Results based on: Fern Incorporation
-2022-05-08 13:34:33,479 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-2] Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2022-05-08 13:34:33,480 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-2] Writing [[com.example.speproject.bean.Ngo@580190a8]]
-2022-05-08 13:34:33,938 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-2] Completed 200 OK
-2022-05-08 13:36:53,453 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-5] POST "/api/addaNgo", parameters={multipart}
-2022-05-08 13:36:53,573 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-5] Mapped to com.example.speproject.controller.ngoController#AddNgo(MultipartFile, String, String, String, String, String, String, String, String, String, String, String, String)
-2022-05-08 13:36:54,274 INFO com.example.speproject.controller.ngoController [http-nio-8089-exec-5] Added Ngo with Banner Photo: logo_4calcTest2.png
-2022-05-08 13:36:54,659 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-5] Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2022-05-08 13:36:54,660 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-5] Writing [com.example.speproject.bean.Ngo@232a31bc]
-2022-05-08 13:36:54,662 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-5] Completed 200 OK
-2022-05-08 13:37:53,129 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-6] PUT "/api/ngolist/2", parameters={}
-2022-05-08 13:37:53,130 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-6] Mapped to com.example.speproject.controller.ngoController#UpdateNgoById(Long, Ngo)
-2022-05-08 13:37:53,480 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-6] Read "application/json;charset=UTF-8" to [com.example.speproject.bean.Ngo@76b1eeb7]
-2022-05-08 13:37:53,504 INFO com.example.speproject.controller.ngoController [http-nio-8089-exec-6] Ngo 2 Updated
-2022-05-08 13:37:53,674 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-6] Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2022-05-08 13:37:53,675 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-6] Writing [com.example.speproject.bean.Ngo@650de33a]
-2022-05-08 13:37:53,681 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-6] Completed 200 OK
-2022-05-08 13:38:05,427 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-7] POST "/api/login", parameters={}
-2022-05-08 13:38:05,428 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-7] Mapped to com.example.speproject.controller.ngoController#login(Ngo)
-2022-05-08 13:38:05,430 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-7] Read "application/json;charset=UTF-8" to [com.example.speproject.bean.Ngo@7fb397ec]
-2022-05-08 13:38:05,437 INFO com.example.speproject.controller.ngoController [http-nio-8089-exec-7] wom@gm.com Signed in
-2022-05-08 13:38:05,438 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-7] Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2022-05-08 13:38:05,440 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-7] Writing [com.example.speproject.bean.Ngo@1d29eb86]
-2022-05-08 13:38:05,450 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-7] Completed 200 OK
-2022-05-08 13:38:45,602 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-8] GET "/api/ngolist/2", parameters={}
-2022-05-08 13:38:45,603 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-8] Mapped to com.example.speproject.controller.ngoController#FetchNgoById(Long)
-2022-05-08 13:38:45,604 INFO com.example.speproject.controller.ngoController [http-nio-8089-exec-8] Fetching Ngo Details of: 2
-2022-05-08 13:38:45,632 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-8] Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2022-05-08 13:38:45,634 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-8] Writing [com.example.speproject.bean.Ngo@4091a7d2]
-2022-05-08 13:38:45,651 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-8] Completed 200 OK
-2022-05-08 13:39:03,305 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-9] GET "/api/ngo/image/2", parameters={}
-2022-05-08 13:39:03,306 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-9] Mapped to com.example.speproject.controller.ngoController#getNgoImage(String)
-2022-05-08 13:39:03,327 INFO com.example.speproject.controller.ngoController [http-nio-8089-exec-9] Getting Banner logo_2calcTest2.png
-2022-05-08 13:39:03,379 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-9] Using 'application/json', given [*/*] and supported [*/*, application/json, application/*+json, application/json, application/*+json]
-2022-05-08 13:39:03,380 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-9] Writing [URL [file:/home/astha/Downloads/speproject/./logo_2calcTest2.png]]
-2022-05-08 13:39:03,425 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-9] Completed 200 OK
-2022-05-08 13:40:03,449 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-05-08 13:40:03,454 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
-2022-05-08 13:40:03,500 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
-2022-05-08 13:59:34,224 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting SpeprojectApplication using Java 11.0.13 on notebook with PID 977108 (/home/astha/Downloads/speproject/target/classes started by astha in /home/astha/Downloads/speproject)
-2022-05-08 13:59:34,232 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
-2022-05-08 13:59:34,451 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-05-08 13:59:34,452 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-05-08 13:59:35,495 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-05-08 13:59:35,550 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 46 ms. Found 3 JPA repository interfaces.
-2022-05-08 13:59:36,089 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8089 (http)
-2022-05-08 13:59:36,095 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8089"]
-2022-05-08 13:59:36,096 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
-2022-05-08 13:59:36,096 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-05-08 13:59:36,166 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
-2022-05-08 13:59:36,167 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1715 ms
-2022-05-08 13:59:36,550 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
-2022-05-08 13:59:37,356 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
-2022-05-08 13:59:39,323 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-05-08 13:59:39,948 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-05-08 13:59:40,103 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2022-05-08 13:59:40,222 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMethodMapping [restartedMain] 18 mappings in 'requestMappingHandlerMapping'
-2022-05-08 13:59:40,289 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2022-05-08 13:59:40,302 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2022-05-08 13:59:40,418 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
-2022-05-08 13:59:40,457 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8089"]
-2022-05-08 13:59:40,499 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8089 (http) with context path ''
-2022-05-08 13:59:40,527 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started SpeprojectApplication in 7.147 seconds (JVM running for 11.083)
-2022-05-08 14:12:01,616 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8089-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-05-08 14:12:01,754 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-1] Initializing Servlet 'dispatcherServlet'
-2022-05-08 14:12:01,755 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-8089-exec-1] Detected StandardServletMultipartResolver
-2022-05-08 14:12:01,756 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-8089-exec-1] Detected AcceptHeaderLocaleResolver
-2022-05-08 14:12:01,756 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-8089-exec-1] Detected FixedThemeResolver
-2022-05-08 14:12:01,759 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-8089-exec-1] Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@47c0f84a
-2022-05-08 14:12:01,761 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-8089-exec-1] Detected org.springframework.web.servlet.support.SessionFlashMapManager@275b4f59
-2022-05-08 14:12:01,762 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-1] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2022-05-08 14:12:01,763 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-1] Completed initialization in 8 ms
-2022-05-08 14:12:02,499 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-1] GET "/api/donor/3", parameters={}
-2022-05-08 14:12:02,964 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-1] Mapped to com.example.speproject.controller.donorController#FetchDonorById(Long)
-2022-05-08 14:12:04,620 INFO com.example.speproject.controller.donorController [http-nio-8089-exec-1] Getting Donor Details of Donor ID 3
-2022-05-08 14:12:10,367 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-1] Failed to complete request: java.util.NoSuchElementException: No value present
-2022-05-08 14:12:10,447 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-8089-exec-1] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.util.NoSuchElementException: No value present] with root cause
-java.util.NoSuchElementException: No value present
-	at java.base/java.util.Optional.get(Optional.java:148)
-	at com.example.speproject.service.donorServiceImpl.FetchDonorById(donorServiceImpl.java:31)
-	at com.example.speproject.controller.donorController.FetchDonorById(donorController.java:39)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy109.save(Unknown Source)
+	at com.example.speproject.service.ngoServiceImpl.saveNgo(ngoServiceImpl.java:59)
+	at com.example.speproject.controller.ngoController.AddNgo(ngoController.java:139)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -471,8 +77,8 @@ java.util.NoSuchElementException: No value present
 	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
 	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
@@ -508,27 +114,720 @@ java.util.NoSuchElementException: No value present
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:829)
-2022-05-08 14:12:10,503 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-1] "ERROR" dispatch for GET "/error", parameters={}
-2022-05-08 14:12:10,505 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-1] Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
-2022-05-08 14:12:12,077 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-1] Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
-2022-05-08 14:12:12,078 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-1] Writing [{timestamp=Sun May 08 14:12:10 IST 2022, status=500, error=Internal Server Error, trace=java.util.No (truncated)...]
-2022-05-08 14:12:13,322 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-1] Exiting from "ERROR" dispatch, status 500
-2022-05-08 14:13:09,057 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-2] POST "/api/addaNgo", parameters={multipart}
-2022-05-08 14:13:09,785 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-2] Mapped to com.example.speproject.controller.ngoController#AddNgo(MultipartFile, String, String, String, String, String, String, String, String, String, String, String, String)
-2022-05-08 14:13:09,791 DEBUG org.springframework.web.method.support.InvocableHandlerMethod [http-nio-8089-exec-2] Could not resolve parameter [0] in public com.example.speproject.bean.Ngo com.example.speproject.controller.ngoController.AddNgo(org.springframework.web.multipart.MultipartFile,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String): Required request part 'file' is not present
-2022-05-08 14:13:09,792 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8089-exec-2] Resolved [org.springframework.web.multipart.support.MissingServletRequestPartException: Required request part 'file' is not present]
-2022-05-08 14:13:09,793 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-2] Completed 400 BAD_REQUEST
-2022-05-08 14:13:09,793 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-2] "ERROR" dispatch for POST "/error", parameters={multipart}
-2022-05-08 14:13:09,794 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-2] Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
-2022-05-08 14:13:09,797 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-2] Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
-2022-05-08 14:13:09,797 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-2] Writing [{timestamp=Sun May 08 14:13:09 IST 2022, status=400, error=Bad Request, trace=org.springframework.we (truncated)...]
-2022-05-08 14:13:09,799 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-2] Exiting from "ERROR" dispatch, status 400
-2022-05-08 14:13:20,037 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-3] POST "/api/addaNgo", parameters={multipart}
-2022-05-08 14:13:20,089 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-3] Mapped to com.example.speproject.controller.ngoController#AddNgo(MultipartFile, String, String, String, String, String, String, String, String, String, String, String, String)
-2022-05-08 14:13:21,986 INFO com.example.speproject.controller.ngoController [http-nio-8089-exec-3] Added Ngo with Banner Photo: logo_5calc2.png
-2022-05-08 14:13:23,045 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-3] Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
-2022-05-08 14:13:23,046 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-3] Writing [com.example.speproject.bean.Ngo@7998aa64]
-2022-05-08 14:13:23,050 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-3] Completed 200 OK
-2022-05-08 14:22:33,571 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-05-08 14:22:34,087 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
-2022-05-08 14:22:36,077 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2022-05-10 00:00:09,880 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-8] "ERROR" dispatch for POST "/error", parameters={multipart}
+2022-05-10 00:00:09,881 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-8] Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-05-10 00:00:09,883 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-8] Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-05-10 00:00:09,883 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-8] Writing [{timestamp=Tue May 10 00:00:09 IST 2022, status=500, error=Internal Server Error, trace=org.springfr (truncated)...]
+2022-05-10 00:00:09,884 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-8] Exiting from "ERROR" dispatch, status 500
+2022-05-10 00:00:17,017 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-9] GET "/api/ngocategory/Animal%20Welfare", parameters={}
+2022-05-10 00:00:17,020 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-9] Mapped to com.example.speproject.controller.ngoController#fetchNgoByCategory(String)
+2022-05-10 00:00:17,021 INFO com.example.speproject.controller.ngoController [http-nio-8089-exec-9] Fetching Ngo by category
+2022-05-10 00:00:17,146 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-9] Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-05-10 00:00:17,147 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-9] Writing [[com.example.speproject.bean.Ngo@369effb9, com.example.speproject.bean.Ngo@1f71576, com.example.spep (truncated)...]
+2022-05-10 00:00:17,213 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-9] Completed 200 OK
+2022-05-10 00:00:19,596 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-10] GET "/api/ngo/image/2", parameters={}
+2022-05-10 00:00:19,598 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-10] Mapped to com.example.speproject.controller.ngoController#getNgoImage(String)
+2022-05-10 00:00:19,605 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-2] GET "/api/ngolist/2", parameters={}
+2022-05-10 00:00:19,605 INFO com.example.speproject.controller.ngoController [http-nio-8089-exec-10] Getting Banner logo_2calc1.png
+2022-05-10 00:00:19,606 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-10] Using 'application/json', given [application/json, text/plain, */*] and supported [*/*, application/json, application/*+json, application/json, application/*+json]
+2022-05-10 00:00:19,606 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-2] Mapped to com.example.speproject.controller.ngoController#FetchNgoById(Long)
+2022-05-10 00:00:19,608 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-10] Writing [URL [file:/home/astha/Downloads/speproject/./logo_2calc1.png]]
+2022-05-10 00:00:19,608 INFO com.example.speproject.controller.ngoController [http-nio-8089-exec-2] Fetching Ngo Details of: 2
+2022-05-10 00:00:19,625 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-2] Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-05-10 00:00:19,627 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-2] Writing [com.example.speproject.bean.Ngo@58a66129]
+2022-05-10 00:00:19,634 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-2] Completed 200 OK
+2022-05-10 00:00:19,829 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-10] Completed 200 OK
+2022-05-10 00:00:23,890 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-4] GET "/api/ngocategory/Animal%20Welfare", parameters={}
+2022-05-10 00:00:23,893 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-4] Mapped to com.example.speproject.controller.ngoController#fetchNgoByCategory(String)
+2022-05-10 00:00:23,894 INFO com.example.speproject.controller.ngoController [http-nio-8089-exec-4] Fetching Ngo by category
+2022-05-10 00:00:23,901 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-4] Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-05-10 00:00:23,902 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-4] Writing [[com.example.speproject.bean.Ngo@58c9957a, com.example.speproject.bean.Ngo@5aacb0cc, com.example.spe (truncated)...]
+2022-05-10 00:00:23,925 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-4] Completed 200 OK
+2022-05-10 00:00:27,588 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-5] GET "/api/ngo/image/13", parameters={}
+2022-05-10 00:00:27,589 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-5] Mapped to com.example.speproject.controller.ngoController#getNgoImage(String)
+2022-05-10 00:00:27,597 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-6] GET "/api/ngolist/13", parameters={}
+2022-05-10 00:00:27,601 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-6] Mapped to com.example.speproject.controller.ngoController#FetchNgoById(Long)
+2022-05-10 00:00:27,602 INFO com.example.speproject.controller.ngoController [http-nio-8089-exec-6] Fetching Ngo Details of: 13
+2022-05-10 00:00:27,612 INFO com.example.speproject.controller.ngoController [http-nio-8089-exec-5] Getting Banner logo_13calc2.png
+2022-05-10 00:00:27,613 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-5] Using 'application/json', given [application/json, text/plain, */*] and supported [*/*, application/json, application/*+json, application/json, application/*+json]
+2022-05-10 00:00:27,613 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-5] Writing [URL [file:/home/astha/Downloads/speproject/./logo_13calc2.png]]
+2022-05-10 00:00:27,613 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-6] Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-05-10 00:00:27,615 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-6] Writing [com.example.speproject.bean.Ngo@7386af04]
+2022-05-10 00:00:27,620 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-6] Completed 200 OK
+2022-05-10 00:00:27,682 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-5] Completed 200 OK
+2022-05-10 00:00:33,338 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-9] GET "/api/ngocategory/Animal%20Welfare", parameters={}
+2022-05-10 00:00:33,340 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-9] Mapped to com.example.speproject.controller.ngoController#fetchNgoByCategory(String)
+2022-05-10 00:00:33,341 INFO com.example.speproject.controller.ngoController [http-nio-8089-exec-9] Fetching Ngo by category
+2022-05-10 00:00:33,348 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-9] Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-05-10 00:00:33,348 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-9] Writing [[com.example.speproject.bean.Ngo@420c384e, com.example.speproject.bean.Ngo@115ea48, com.example.spep (truncated)...]
+2022-05-10 00:00:33,368 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-9] Completed 200 OK
+2022-05-10 00:00:38,271 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-10] GET "/api/ngo/image/20", parameters={}
+2022-05-10 00:00:38,272 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-10] Mapped to com.example.speproject.controller.ngoController#getNgoImage(String)
+2022-05-10 00:00:38,275 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-1] GET "/api/ngolist/20", parameters={}
+2022-05-10 00:00:38,276 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-1] Mapped to com.example.speproject.controller.ngoController#FetchNgoById(Long)
+2022-05-10 00:00:38,278 INFO com.example.speproject.controller.ngoController [http-nio-8089-exec-1] Fetching Ngo Details of: 20
+2022-05-10 00:00:38,281 INFO com.example.speproject.controller.ngoController [http-nio-8089-exec-10] Getting Banner logo_20calc1.png
+2022-05-10 00:00:38,282 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-10] Using 'application/json', given [application/json, text/plain, */*] and supported [*/*, application/json, application/*+json, application/json, application/*+json]
+2022-05-10 00:00:38,282 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-1] Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-05-10 00:00:38,282 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-1] Writing [com.example.speproject.bean.Ngo@6481ac78]
+2022-05-10 00:00:38,282 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-10] Writing [URL [file:/home/astha/Downloads/speproject/./logo_20calc1.png]]
+2022-05-10 00:00:38,284 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-1] Completed 200 OK
+2022-05-10 00:00:38,487 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-10] Completed 200 OK
+2022-05-10 00:00:41,231 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-6] GET "/api/ngocategory/Animal%20Welfare", parameters={}
+2022-05-10 00:00:41,231 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-6] Mapped to com.example.speproject.controller.ngoController#fetchNgoByCategory(String)
+2022-05-10 00:00:41,232 INFO com.example.speproject.controller.ngoController [http-nio-8089-exec-6] Fetching Ngo by category
+2022-05-10 00:00:41,246 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-6] Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-05-10 00:00:41,247 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-6] Writing [[com.example.speproject.bean.Ngo@8d7086d, com.example.speproject.bean.Ngo@3c04c060, com.example.spep (truncated)...]
+2022-05-10 00:00:41,280 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-6] Completed 200 OK
+2022-05-10 00:00:45,861 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-5] GET "/api/ngo/image/29", parameters={}
+2022-05-10 00:00:45,862 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-5] Mapped to com.example.speproject.controller.ngoController#getNgoImage(String)
+2022-05-10 00:00:45,866 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-8] GET "/api/ngolist/29", parameters={}
+2022-05-10 00:00:45,867 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-8] Mapped to com.example.speproject.controller.ngoController#FetchNgoById(Long)
+2022-05-10 00:00:45,869 INFO com.example.speproject.controller.ngoController [http-nio-8089-exec-8] Fetching Ngo Details of: 29
+2022-05-10 00:00:45,875 INFO com.example.speproject.controller.ngoController [http-nio-8089-exec-5] Getting Banner logo_29calc3.png
+2022-05-10 00:00:45,876 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-8] Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-05-10 00:00:45,876 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-5] Using 'application/json', given [application/json, text/plain, */*] and supported [*/*, application/json, application/*+json, application/json, application/*+json]
+2022-05-10 00:00:45,877 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-5] Writing [URL [file:/home/astha/Downloads/speproject/./logo_29calc3.png]]
+2022-05-10 00:00:45,878 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-8] Writing [com.example.speproject.bean.Ngo@40c5efe4]
+2022-05-10 00:00:45,883 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-8] Completed 200 OK
+2022-05-10 00:00:45,909 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-5] Completed 200 OK
+2022-05-10 00:00:53,597 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-7] GET "/api/ngocategory/Animal%20Welfare", parameters={}
+2022-05-10 00:00:53,598 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-7] Mapped to com.example.speproject.controller.ngoController#fetchNgoByCategory(String)
+2022-05-10 00:00:53,599 INFO com.example.speproject.controller.ngoController [http-nio-8089-exec-7] Fetching Ngo by category
+2022-05-10 00:00:53,606 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-7] Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-05-10 00:00:53,606 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-7] Writing [[com.example.speproject.bean.Ngo@b338b26, com.example.speproject.bean.Ngo@b0a1c31, com.example.spepr (truncated)...]
+2022-05-10 00:00:53,631 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-7] Completed 200 OK
+2022-05-10 00:00:55,645 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-9] GET "/api/ngo/image/2", parameters={}
+2022-05-10 00:00:55,646 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-9] Mapped to com.example.speproject.controller.ngoController#getNgoImage(String)
+2022-05-10 00:00:55,654 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-2] GET "/api/ngolist/2", parameters={}
+2022-05-10 00:00:55,655 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-2] Mapped to com.example.speproject.controller.ngoController#FetchNgoById(Long)
+2022-05-10 00:00:55,656 INFO com.example.speproject.controller.ngoController [http-nio-8089-exec-2] Fetching Ngo Details of: 2
+2022-05-10 00:00:55,658 INFO com.example.speproject.controller.ngoController [http-nio-8089-exec-9] Getting Banner logo_2calc1.png
+2022-05-10 00:00:55,661 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-9] Using 'application/json', given [application/json, text/plain, */*] and supported [*/*, application/json, application/*+json, application/json, application/*+json]
+2022-05-10 00:00:55,662 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-9] Writing [URL [file:/home/astha/Downloads/speproject/./logo_2calc1.png]]
+2022-05-10 00:00:55,667 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-9] Completed 200 OK
+2022-05-10 00:00:55,671 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-2] Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-05-10 00:00:55,672 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-2] Writing [com.example.speproject.bean.Ngo@68c6c449]
+2022-05-10 00:00:55,676 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-2] Completed 200 OK
+2022-05-10 00:01:09,868 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-1] OPTIONS "/api/login", parameters={}
+2022-05-10 00:01:09,869 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-1] Mapped to com.example.speproject.controller.ngoController#login(Ngo)
+2022-05-10 00:01:09,871 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-1] Completed 200 OK
+2022-05-10 00:01:09,918 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-10] POST "/api/login", parameters={}
+2022-05-10 00:01:09,918 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-10] Mapped to com.example.speproject.controller.ngoController#login(Ngo)
+2022-05-10 00:01:10,044 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-10] Read "application/json;charset=UTF-8" to [com.example.speproject.bean.Ngo@5e7f0721]
+2022-05-10 00:01:10,058 INFO com.example.speproject.controller.ngoController [http-nio-8089-exec-10] undefined Signed in
+2022-05-10 00:01:10,060 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-10] Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-05-10 00:01:10,061 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-10] Writing [com.example.speproject.bean.Ngo@22e8e4d]
+2022-05-10 00:01:10,063 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-10] Completed 200 OK
+2022-05-10 00:01:10,084 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-3] GET "/api/ngo/image/2", parameters={}
+2022-05-10 00:01:10,085 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-3] Mapped to com.example.speproject.controller.ngoController#getNgoImage(String)
+2022-05-10 00:01:10,091 INFO com.example.speproject.controller.ngoController [http-nio-8089-exec-3] Getting Banner logo_2calc1.png
+2022-05-10 00:01:10,092 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-3] Using 'application/json', given [application/json, text/plain, */*] and supported [*/*, application/json, application/*+json, application/json, application/*+json]
+2022-05-10 00:01:10,092 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-3] Writing [URL [file:/home/astha/Downloads/speproject/./logo_2calc1.png]]
+2022-05-10 00:01:10,096 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-3] Completed 200 OK
+2022-05-10 00:01:20,118 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-8] OPTIONS "/api/ngolist/2", parameters={}
+2022-05-10 00:01:20,118 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-8] Mapped to com.example.speproject.controller.ngoController#DeleteNgoById(Long)
+2022-05-10 00:01:20,119 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-8] Completed 200 OK
+2022-05-10 00:01:20,123 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-5] DELETE "/api/ngolist/2", parameters={}
+2022-05-10 00:01:20,124 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-5] Mapped to com.example.speproject.controller.ngoController#DeleteNgoById(Long)
+2022-05-10 00:01:21,198 INFO com.example.speproject.controller.ngoController [http-nio-8089-exec-5] Ngo 2 Deleted
+2022-05-10 00:01:21,200 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-5] Using 'application/json', given [application/json, text/plain, */*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2022-05-10 00:01:21,201 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-5] Writing ["Department Deleted Successfully"]
+2022-05-10 00:01:21,203 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-5] Completed 200 OK
+2022-05-10 00:01:39,047 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-9] POST "/api/addaNgo", parameters={multipart}
+2022-05-10 00:01:39,058 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-9] Mapped to com.example.speproject.controller.ngoController#AddNgo(MultipartFile, String, String, String, String, String, String, String, String, String, String, String, String)
+2022-05-10 00:01:39,072 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-9] Failed to complete request: org.springframework.dao.DataIntegrityViolationException: not-null property references a null or transient value : com.example.speproject.bean.Ngo.address; nested exception is org.hibernate.PropertyValueException: not-null property references a null or transient value : com.example.speproject.bean.Ngo.address
+2022-05-10 00:01:39,073 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-8089-exec-9] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: not-null property references a null or transient value : com.example.speproject.bean.Ngo.address; nested exception is org.hibernate.PropertyValueException: not-null property references a null or transient value : com.example.speproject.bean.Ngo.address] with root cause
+org.hibernate.PropertyValueException: not-null property references a null or transient value : com.example.speproject.bean.Ngo.address
+	at org.hibernate.engine.internal.Nullability.checkNullability(Nullability.java:111)
+	at org.hibernate.engine.internal.Nullability.checkNullability(Nullability.java:55)
+	at org.hibernate.action.internal.AbstractEntityInsertAction.nullifyTransientReferencesIfNotAlready(AbstractEntityInsertAction.java:116)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:72)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:645)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:282)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:263)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:317)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:330)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:287)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:193)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:123)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:185)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:128)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:55)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:756)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:742)
+	at jdk.internal.reflect.GeneratedMethodAccessor92.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:362)
+	at com.sun.proxy.$Proxy105.persist(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor92.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:311)
+	at com.sun.proxy.$Proxy105.persist(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:637)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:529)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:639)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:163)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy109.save(Unknown Source)
+	at com.example.speproject.service.ngoServiceImpl.saveNgo(ngoServiceImpl.java:59)
+	at com.example.speproject.controller.ngoController.AddNgo(ngoController.java:139)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2022-05-10 00:01:39,083 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-9] "ERROR" dispatch for POST "/error", parameters={multipart}
+2022-05-10 00:01:39,084 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-9] Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-05-10 00:01:39,100 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-9] Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-05-10 00:01:39,101 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-9] Writing [{timestamp=Tue May 10 00:01:39 IST 2022, status=500, error=Internal Server Error, trace=org.springfr (truncated)...]
+2022-05-10 00:01:39,103 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-9] Exiting from "ERROR" dispatch, status 500
+2022-05-10 00:01:59,773 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-10 00:01:59,779 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2022-05-10 00:02:01,113 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2022-05-10 00:02:21,683 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting SpeprojectApplication using Java 11.0.13 on notebook with PID 103559 (/home/astha/Downloads/speproject/target/classes started by astha in /home/astha/Downloads/speproject)
+2022-05-10 00:02:21,687 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2022-05-10 00:02:21,743 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-10 00:02:21,744 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-10 00:02:23,802 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-10 00:02:23,865 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 53 ms. Found 3 JPA repository interfaces.
+2022-05-10 00:02:24,495 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8089 (http)
+2022-05-10 00:02:24,506 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8089"]
+2022-05-10 00:02:24,507 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-05-10 00:02:24,507 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-05-10 00:02:24,626 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-05-10 00:02:24,627 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2882 ms
+2022-05-10 00:02:25,322 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2022-05-10 00:02:26,028 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2022-05-10 00:02:27,107 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-10 00:02:27,810 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-10 00:02:27,977 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-05-10 00:02:28,130 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMethodMapping [restartedMain] 18 mappings in 'requestMappingHandlerMapping'
+2022-05-10 00:02:28,179 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-05-10 00:02:28,192 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-05-10 00:02:28,326 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-05-10 00:02:28,360 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8089"]
+2022-05-10 00:02:28,439 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8089 (http) with context path ''
+2022-05-10 00:02:28,460 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started SpeprojectApplication in 8.609 seconds (JVM running for 10.212)
+2022-05-10 00:02:59,417 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8089-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-10 00:02:59,419 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-05-10 00:02:59,419 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-8089-exec-1] Detected StandardServletMultipartResolver
+2022-05-10 00:02:59,420 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-8089-exec-1] Detected AcceptHeaderLocaleResolver
+2022-05-10 00:02:59,420 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-8089-exec-1] Detected FixedThemeResolver
+2022-05-10 00:02:59,421 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-8089-exec-1] Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@231657ea
+2022-05-10 00:02:59,421 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-8089-exec-1] Detected org.springframework.web.servlet.support.SessionFlashMapManager@3d6cdd2a
+2022-05-10 00:02:59,421 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-1] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-05-10 00:02:59,421 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-1] Completed initialization in 2 ms
+2022-05-10 00:02:59,428 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-1] POST "/api/addaNgo", parameters={multipart}
+2022-05-10 00:02:59,461 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-1] Mapped to com.example.speproject.controller.ngoController#AddNgo(MultipartFile, String, String, String, String, String, String, String, String, String, String, String, String)
+2022-05-10 00:03:01,143 INFO com.example.speproject.controller.ngoController [http-nio-8089-exec-1] Added Ngo with Banner Photo: logo_30calc3.png
+2022-05-10 00:03:01,627 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-1] Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-05-10 00:03:01,628 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-1] Writing [com.example.speproject.bean.Ngo@29fab70b]
+2022-05-10 00:03:01,687 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-1] Completed 200 OK
+2022-05-10 00:04:24,848 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-3] POST "/api/login", parameters={}
+2022-05-10 00:04:24,849 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-3] Mapped to com.example.speproject.controller.ngoController#login(Ngo)
+2022-05-10 00:04:24,904 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-3] Read "application/json;charset=UTF-8" to [com.example.speproject.bean.Ngo@524c54b4]
+2022-05-10 00:04:25,162 INFO com.example.speproject.controller.ngoController [http-nio-8089-exec-3] undefined Signed in
+2022-05-10 00:04:25,163 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-3] Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-05-10 00:04:25,163 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-3] Writing [com.example.speproject.bean.Ngo@17e972c1]
+2022-05-10 00:04:25,196 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-3] Completed 200 OK
+2022-05-10 00:04:25,223 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-4] GET "/api/ngo/image/30", parameters={}
+2022-05-10 00:04:25,225 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-4] Mapped to com.example.speproject.controller.ngoController#getNgoImage(String)
+2022-05-10 00:04:25,235 INFO com.example.speproject.controller.ngoController [http-nio-8089-exec-4] Getting Banner logo_30calc3.png
+2022-05-10 00:04:25,249 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-4] Using 'application/json', given [application/json, text/plain, */*] and supported [*/*, application/json, application/*+json, application/json, application/*+json]
+2022-05-10 00:04:25,250 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-4] Writing [URL [file:/home/astha/Downloads/speproject/./logo_30calc3.png]]
+2022-05-10 00:04:25,253 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-4] Completed 200 OK
+2022-05-10 00:04:31,509 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-5] OPTIONS "/api/ngolist/30", parameters={}
+2022-05-10 00:04:31,510 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-5] Mapped to com.example.speproject.controller.ngoController#DeleteNgoById(Long)
+2022-05-10 00:04:31,512 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-5] Completed 200 OK
+2022-05-10 00:04:31,519 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-7] DELETE "/api/ngolist/30", parameters={}
+2022-05-10 00:04:31,520 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-7] Mapped to com.example.speproject.controller.ngoController#DeleteNgoById(Long)
+2022-05-10 00:04:31,662 INFO com.example.speproject.controller.ngoController [http-nio-8089-exec-7] Ngo 30 Deleted
+2022-05-10 00:04:31,663 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-7] Using 'application/json', given [application/json, text/plain, */*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2022-05-10 00:04:31,664 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-7] Writing ["Department Deleted Successfully"]
+2022-05-10 00:04:31,665 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-7] Completed 200 OK
+2022-05-10 00:09:43,818 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-8] POST "/api/addaNgo", parameters={multipart}
+2022-05-10 00:09:43,839 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-8] Mapped to com.example.speproject.controller.ngoController#AddNgo(MultipartFile, String, String, String, String, String, String, String, String, String, String, String, String)
+2022-05-10 00:09:43,867 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8089-exec-8] Duplicate entry 'a' for key 'ngos.UK_f6ocr31gs6hnewlkuwr6o7j85'
+2022-05-10 00:09:43,940 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-8] Failed to complete request: org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [ngos.UK_f6ocr31gs6hnewlkuwr6o7j85]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+2022-05-10 00:09:43,944 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-8089-exec-8] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [ngos.UK_f6ocr31gs6hnewlkuwr6o7j85]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement] with root cause
+java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'a' for key 'ngos.UK_f6ocr31gs6hnewlkuwr6o7j85'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1098)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1046)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1371)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1031)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197)
+	at org.hibernate.dialect.identity.GetGeneratedKeysDelegate.executeAndExtract(GetGeneratedKeysDelegate.java:58)
+	at org.hibernate.id.insert.AbstractReturningDelegate.performInsert(AbstractReturningDelegate.java:43)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3279)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3885)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:84)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:645)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:282)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:263)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:317)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:330)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:287)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:193)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:123)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:185)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:128)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:55)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:756)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:742)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:362)
+	at com.sun.proxy.$Proxy105.persist(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:311)
+	at com.sun.proxy.$Proxy105.persist(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:637)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:529)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:639)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:163)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy109.save(Unknown Source)
+	at com.example.speproject.service.ngoServiceImpl.saveNgo(ngoServiceImpl.java:59)
+	at com.example.speproject.controller.ngoController.AddNgo(ngoController.java:131)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2022-05-10 00:09:43,949 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-8] "ERROR" dispatch for POST "/error", parameters={multipart}
+2022-05-10 00:09:43,952 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-8] Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-05-10 00:09:43,963 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-8] Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-05-10 00:09:43,966 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-8] Writing [{timestamp=Tue May 10 00:09:43 IST 2022, status=500, error=Internal Server Error, trace=org.springfr (truncated)...]
+2022-05-10 00:09:43,976 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-8] Exiting from "ERROR" dispatch, status 500
+2022-05-10 00:10:09,841 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-9] POST "/api/addaNgo", parameters={multipart}
+2022-05-10 00:10:09,859 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-9] Mapped to com.example.speproject.controller.ngoController#AddNgo(MultipartFile, String, String, String, String, String, String, String, String, String, String, String, String)
+2022-05-10 00:10:09,869 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8089-exec-9] Duplicate entry '' for key 'ngos.UK_f6ocr31gs6hnewlkuwr6o7j85'
+2022-05-10 00:10:09,924 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-9] Failed to complete request: org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [ngos.UK_f6ocr31gs6hnewlkuwr6o7j85]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+2022-05-10 00:10:09,925 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-8089-exec-9] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [ngos.UK_f6ocr31gs6hnewlkuwr6o7j85]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement] with root cause
+java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '' for key 'ngos.UK_f6ocr31gs6hnewlkuwr6o7j85'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1098)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1046)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1371)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1031)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197)
+	at org.hibernate.dialect.identity.GetGeneratedKeysDelegate.executeAndExtract(GetGeneratedKeysDelegate.java:58)
+	at org.hibernate.id.insert.AbstractReturningDelegate.performInsert(AbstractReturningDelegate.java:43)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3279)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3885)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:84)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:645)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:282)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:263)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:317)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:330)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:287)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:193)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:123)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:185)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:128)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:55)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:756)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:742)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:362)
+	at com.sun.proxy.$Proxy105.persist(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:311)
+	at com.sun.proxy.$Proxy105.persist(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:637)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:529)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:639)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:163)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy109.save(Unknown Source)
+	at com.example.speproject.service.ngoServiceImpl.saveNgo(ngoServiceImpl.java:59)
+	at com.example.speproject.controller.ngoController.AddNgo(ngoController.java:131)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2022-05-10 00:10:09,926 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-9] "ERROR" dispatch for POST "/error", parameters={multipart}
+2022-05-10 00:10:09,927 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-9] Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-05-10 00:10:09,928 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-9] Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-05-10 00:10:09,929 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-9] Writing [{timestamp=Tue May 10 00:10:09 IST 2022, status=500, error=Internal Server Error, trace=org.springfr (truncated)...]
+2022-05-10 00:10:09,931 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-9] Exiting from "ERROR" dispatch, status 500
+2022-05-10 00:10:25,556 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-10] POST "/api/addaNgo", parameters={multipart}
+2022-05-10 00:10:25,594 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-10] Mapped to com.example.speproject.controller.ngoController#AddNgo(MultipartFile, String, String, String, String, String, String, String, String, String, String, String, String)
+2022-05-10 00:10:25,611 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8089-exec-10] Duplicate entry '' for key 'ngos.UK_f6ocr31gs6hnewlkuwr6o7j85'
+2022-05-10 00:10:25,673 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-10] Failed to complete request: org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [ngos.UK_f6ocr31gs6hnewlkuwr6o7j85]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+2022-05-10 00:10:25,676 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-8089-exec-10] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [ngos.UK_f6ocr31gs6hnewlkuwr6o7j85]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement] with root cause
+java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '' for key 'ngos.UK_f6ocr31gs6hnewlkuwr6o7j85'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1098)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1046)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1371)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1031)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197)
+	at org.hibernate.dialect.identity.GetGeneratedKeysDelegate.executeAndExtract(GetGeneratedKeysDelegate.java:58)
+	at org.hibernate.id.insert.AbstractReturningDelegate.performInsert(AbstractReturningDelegate.java:43)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3279)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3885)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:84)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:645)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:282)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:263)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:317)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:330)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:287)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:193)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:123)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:185)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:128)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:55)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:756)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:742)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:362)
+	at com.sun.proxy.$Proxy105.persist(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:311)
+	at com.sun.proxy.$Proxy105.persist(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:637)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:529)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:639)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:163)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy109.save(Unknown Source)
+	at com.example.speproject.service.ngoServiceImpl.saveNgo(ngoServiceImpl.java:59)
+	at com.example.speproject.controller.ngoController.AddNgo(ngoController.java:131)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2022-05-10 00:10:25,681 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-10] "ERROR" dispatch for POST "/error", parameters={multipart}
+2022-05-10 00:10:25,684 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-10] Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-05-10 00:10:25,693 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-10] Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-05-10 00:10:25,694 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-10] Writing [{timestamp=Tue May 10 00:10:25 IST 2022, status=500, error=Internal Server Error, trace=org.springfr (truncated)...]
+2022-05-10 00:10:25,705 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-10] Exiting from "ERROR" dispatch, status 500
+2022-05-10 00:10:48,800 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-1] POST "/api/addaNgo", parameters={multipart}
+2022-05-10 00:10:48,812 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-1] Mapped to com.example.speproject.controller.ngoController#AddNgo(MultipartFile, String, String, String, String, String, String, String, String, String, String, String, String)
+2022-05-10 00:10:48,923 INFO com.example.speproject.controller.ngoController [http-nio-8089-exec-1] Added Ngo with Banner Photo: logo_34calc2.png
+2022-05-10 00:10:49,099 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-1] Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-05-10 00:10:49,100 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-1] Writing [com.example.speproject.bean.Ngo@146e9aba]
+2022-05-10 00:10:49,103 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-1] Completed 200 OK
+2022-05-10 00:14:56,585 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-3] POST "/api/addaNgo", parameters={multipart}
+2022-05-10 00:14:56,595 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8089-exec-3] Mapped to com.example.speproject.controller.ngoController#AddNgo(MultipartFile, String, String, String, String, String, String, String, String, String, String, String, String)
+2022-05-10 00:14:56,690 INFO com.example.speproject.controller.ngoController [http-nio-8089-exec-3] Added Ngo with Banner Photo: logo_35calcTest1.png
+2022-05-10 00:14:56,823 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8089-exec-3] Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-05-10 00:14:56,823 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8089-exec-3] Writing [com.example.speproject.bean.Ngo@2ab4d78e]
+2022-05-10 00:14:56,825 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-3] Completed 200 OK
+2022-05-10 00:45:32,129 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-10 00:45:32,135 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2022-05-10 00:45:32,152 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
